@@ -5,7 +5,8 @@ import QtQuick.Layouts
 Page {
     id: page
 
-    StackView.onActivated: {
+    // Вызывается из main.qml после закрытия редактора, чтобы обновить список
+    function refreshList() {
         listView.model = null
         listView.model = noteManager.filteredNotes
     }
@@ -112,9 +113,7 @@ Page {
 
             delegate: NoteDelegate {
                 width: listView.width
-                onClicked: {
-                    stackView.push(noteEditPage, { noteId: modelData.id })
-                }
+                onClicked: window.openEditor(modelData.id)
             }
         }
     }
@@ -137,7 +136,7 @@ Page {
 
         }
 
-        onClicked: stackView.push(noteEditPage, { noteId: -1 })
+        onClicked: window.openEditor(-1)
 
         SequentialAnimation on scale {
             running: addButton.hovered

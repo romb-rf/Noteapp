@@ -11,6 +11,38 @@ Page {
     property bool notePinned: false
     property string noteCreated: ""
 
+    signal saveClicked()
+    signal backClicked()
+
+    // Функция загрузки данных заметки по id
+    function loadNote(id) {
+        if (id >= 0) {
+            var noteObj = noteManager.noteById(id)
+            if (noteObj) {
+                noteTitle = noteObj.title || ""
+                noteContent = noteObj.content || ""
+                noteColor = noteObj.color || "#ffffff"
+                notePinned = noteObj.pinned || false
+                noteCreated = noteObj.created
+                    ? new Date(noteObj.created).toLocaleString(Qt.locale(), "yyyy-MM-dd hh:mm")
+                    : ""
+            }
+        } else {
+            // Новая заметка — сбрасываем поля
+            noteTitle = ""
+            noteContent = ""
+            noteColor = "#ffffff"
+            notePinned = false
+            noteCreated = ""
+        }
+    }
+
+    // При изменении noteId (открытие другой заметки) обновляем поля
+    onNoteIdChanged: loadNote(noteId)
+
+    // При первом создании компонента тоже инициализируем
+    Component.onCompleted: loadNote(noteId)
+
     background: Rectangle {
         gradient: Gradient {
             GradientStop { position: 0.0; color: "#2b2b3c" }
@@ -32,7 +64,6 @@ Page {
             anchors.margins: 8
             spacing: 8
 
-            // Кастомная кнопка "←"
             Rectangle {
                 width: 40; height: 40
                 radius: 10
@@ -46,7 +77,7 @@ Page {
                 MouseArea {
                     id: backMouseArea
                     anchors.fill: parent
-                    onClicked: stackView.pop()
+                    onClicked: backClicked()
                 }
             }
 
@@ -58,7 +89,6 @@ Page {
                 Layout.fillWidth: true
             }
 
-            // Кастомная кнопка удаления
             Rectangle {
                 width: 40; height: 40
                 radius: 10
@@ -74,7 +104,7 @@ Page {
                     anchors.fill: parent
                     onClicked: {
                         noteManager.removeNote(noteId)
-                        stackView.pop()
+                        backClicked()
                     }
                 }
             }
@@ -212,7 +242,7 @@ Page {
                 }
                 onClicked: {
                     if (titleField.text.trim() === "" && contentArea.text.trim() === "") {
-                        stackView.pop()
+                        backClicked()
                         return
                     }
                     noteManager.addOrUpdateNoteFields(
@@ -222,30 +252,9 @@ Page {
                         noteColor,
                         notePinned
                     )
-                    stackView.pop()
+                    saveClicked()
                 }
             }
-        }
-    }
-
-    Component.onCompleted: {
-        if (noteId >= 0) {
-            var noteObj = noteManager.noteById(noteId)
-            if (noteObj) {
-                noteTitle = noteObj.title || ""
-                noteContent = noteObj.content || ""
-                noteColor = noteObj.color || "#ffffff"
-                notePinned = noteObj.pinned || false
-                noteCreated = noteObj.created
-                    ? new Date(noteObj.created).toLocaleString(Qt.locale(), "yyyy-MM-dd hh:mm")
-                    : ""
-            }
-        } else {
-            noteTitle = ""
-            noteContent = ""
-            noteColor = "#ffffff"
-            notePinned = false
-            noteCreated = ""
         }
     }
 }

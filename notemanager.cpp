@@ -26,11 +26,9 @@ void NoteManager::setSortNewestFirst(bool value)
     if (m_sortNewestFirst != value) {
         m_sortNewestFirst = value;
         emit sortNewestFirstChanged();
-        emit notesChanged();
-        emit filteredNotesChanged();
+        emit filteredNotesChanged();   // <-- ДОБАВИТЬ
     }
 }
-
 Note NoteManager::noteById(int id) const
 {
     for (const auto &n : m_notes) {
@@ -93,12 +91,13 @@ void NoteManager::togglePin(int id)
         if (n.id() == id) {
             n.setPinned(!n.isPinned());
             emit notesChanged();
-            saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");
+            emit filteredNotesChanged();   // <-- ДОБАВИТЬ
+            saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");    // или QCoreApplication::applicationDirPath() + "/notes.json"
             break;
         }
     }
-    emit filteredNotesChanged();
 }
+
 
 QList<Note> NoteManager::filteredNotes() const
 {

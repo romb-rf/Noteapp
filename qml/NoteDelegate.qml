@@ -65,10 +65,9 @@ Rectangle {
         ToolButton {
             text: modelData.pinned ? "📌" : "📍"
             font.pixelSize: 20
-            onClicked: noteManager.togglePin(modelData.id)
-            background: Rectangle {
-                radius: 8
-                color: parent.pressed ? "#4a4a6a" : "transparent"
+            onClicked: {
+                console.log("Toggle pin for id:", modelData.id)  // для отладки
+                noteManager.togglePin(modelData.id)
             }
         }
     }

@@ -1,6 +1,5 @@
 import QtQuick
 import QtQuick.Controls
-import QtQuick.Layouts
 
 ApplicationWindow {
     id: window
@@ -8,38 +7,45 @@ ApplicationWindow {
     width: 420
     height: 720
     title: "Заметки"
-    color: "#1e1e2e"   // глубокий тёмный фон
+    color: "#1e1e2e"
 
-    // Кастомные анимации переходов между страницами
-    StackView {
-        id: stackView
+    // Идентификатор текущей редактируемой заметки
+    property int currentNoteId: -1
+    // Флаг видимости редактора
+    property bool editorVisible: false
+
+    // Главная страница со списком (видна, когда редактор скрыт)
+    NotesListPage {
+        id: notesListPage
         anchors.fill: parent
+        visible: !editorVisible
+    }
 
-        pushEnter: Transition {
-            ParallelAnimation {
-                NumberAnimation { property: "x"; from: stackView.width; to: 0; duration: 300; easing.type: Easing.OutCubic }
-                NumberAnimation { property: "opacity"; from: 0.0; to: 1.0; duration: 300 }
+    // Редактор всегда загружен, но показывается только при editorVisible = true
+    Loader {
+        id: editorLoader
+        anchors.fill: parent
+        active: true            // компонент создаётся сразу и живёт всё время
+        visible: editorVisible
+
+        sourceComponent: NoteEditPage {
+            // noteId берётся из свойства window, обновляется при открытии
+            noteId: window.currentNoteId
+
+            onSaveClicked: {
+                window.editorVisible = false
+                notesListPage.refreshList()
+            }
+            onBackClicked: {
+                window.editorVisible = false
+                notesListPage.refreshList()
             }
         }
-        pushExit: Transition {
-            NumberAnimation { property: "opacity"; from: 1.0; to: 0.0; duration: 200 }
-        }
-        popEnter: Transition {
-            NumberAnimation { property: "x"; from: -stackView.width/3; to: 0; duration: 300; easing.type: Easing.OutCubic }
-        }
-        popExit: Transition {
-            NumberAnimation { property: "x"; from: 0; to: stackView.width; duration: 300; easing.type: Easing.InCubic }
-        }
-
-        initialItem: notesListPage
     }
 
-    Component {
-        id: notesListPage
-        NotesListPage {}
-    }
-    Component {
-        id: noteEditPage
-        NoteEditPage {}
+    // Функция для открытия редактора с нужным id заметки
+    function openEditor(noteId) {
+        window.currentNoteId = noteId   // меняем свойство — NoteEditPage перехватит изменение
+        window.editorVisible = true
     }
 }
