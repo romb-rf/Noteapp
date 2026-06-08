@@ -1,0 +1,6 @@
+C:/ProgramData/QtCreator/Links/4cdb98771dbf206854b063301b6525c0/CMakeFiles/NoteApp.dir
+C:/ProgramData/QtCreator/Links/4cdb98771dbf206854b063301b6525c0/CMakeFiles/NoteApp_qmlimportscan.dir
+C:/ProgramData/QtCreator/Links/4cdb98771dbf206854b063301b6525c0/CMakeFiles/edit_cache.dir
+C:/ProgramData/QtCreator/Links/4cdb98771dbf206854b063301b6525c0/CMakeFiles/rebuild_cache.dir
+C:/ProgramData/QtCreator/Links/4cdb98771dbf206854b063301b6525c0/CMakeFiles/NoteApp_autogen_timestamp_deps.dir
+C:/ProgramData/QtCreator/Links/4cdb98771dbf206854b063301b6525c0/CMakeFiles/NoteApp_autogen.dir

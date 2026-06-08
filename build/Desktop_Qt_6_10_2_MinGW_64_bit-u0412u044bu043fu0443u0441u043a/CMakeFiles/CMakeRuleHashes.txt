@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+12f0a0cba8a35c3f0b6a9f5f1a1d0594 .qt/qml_imports/NoteApp_build.cmake
+d071e7bdcc1efa41290ef3efa702ad36 CMakeFiles/NoteApp_autogen
+d071e7bdcc1efa41290ef3efa702ad36 CMakeFiles/NoteApp_qmlimportscan
+7439743d461c41d010e7fb35ea8164db NoteApp_autogen/timestamp
