@@ -13,6 +13,13 @@ Note::Note(const QJsonObject &json)
     if (json.contains("color"))
         m_color = QColor(json.value("color").toString());
     m_pinned = json.value("pinned").toBool(false);
+    if (json.contains("tags")) {
+        const QJsonArray arr = json["tags"].toArray();
+        for (const auto &val : arr)
+            m_tags.append(val.toString());
+    }
+    if (json.contains("reminder") && !json["reminder"].isNull())
+        m_reminder = QDateTime::fromString(json["reminder"].toString(), Qt::ISODate);
 }
 
 int Note::id() const { return m_id; }
@@ -36,6 +43,12 @@ void Note::setColor(const QColor &color) { m_color = color; }
 bool Note::isPinned() const { return m_pinned; }
 void Note::setPinned(bool pinned) { m_pinned = pinned; }
 
+QStringList Note::tags() const { return m_tags; }
+void Note::setTags(const QStringList &tags) { m_tags = tags; }
+
+QDateTime Note::reminder() const { return m_reminder; }
+void Note::setReminder(const QDateTime &reminder) { m_reminder = reminder; }
+
 QJsonObject Note::toJson() const
 {
     QJsonObject obj;
@@ -46,5 +59,13 @@ QJsonObject Note::toJson() const
     obj["modified"] = m_modified.toString(Qt::ISODate);
     obj["color"] = m_color.name(QColor::HexRgb);
     obj["pinned"] = m_pinned;
+    QJsonArray arr;
+    for (const auto &t : m_tags)
+        arr.append(t);
+    obj["tags"] = arr;
+    if (m_reminder.isValid())
+        obj["reminder"] = m_reminder.toString(Qt::ISODate);
+    else
+        obj["reminder"] = QJsonValue::Null;
     return obj;
 }

@@ -1,0 +1,9 @@
+-rootPath
+D:/Noteapp
+-cmake-output
+-output-file
+D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qt/qml_imports/NoteApp_build.cmake
+-importPath
+D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug
+-importPath
+E:/qt/6.10.2/mingw_64/qml

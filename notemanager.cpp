@@ -4,9 +4,16 @@
 #include <QJsonArray>
 #include <QJsonObject>
 #include <QCoreApplication>
+#include <QRegularExpression>
 #include <algorithm>
+#include <QSet>
 
-NoteManager::NoteManager(QObject *parent) : QObject(parent) {}
+NoteManager::NoteManager(QObject *parent) : QObject(parent)
+{
+    m_reminderTimer = new QTimer(this);
+    connect(m_reminderTimer, &QTimer::timeout, this, &NoteManager::checkReminders);
+    m_reminderTimer->start(1000);
+}
 
 QList<Note> NoteManager::notes() const { return m_notes; }
 
@@ -16,7 +23,7 @@ void NoteManager::setSearchQuery(const QString &query)
     if (m_searchQuery != query) {
         m_searchQuery = query;
         emit searchQueryChanged();
-        emit filteredNotesChanged();   // обновление поиска
+        emit filteredNotesChanged();
     }
 }
 
@@ -26,7 +33,17 @@ void NoteManager::setSortNewestFirst(bool value)
     if (m_sortNewestFirst != value) {
         m_sortNewestFirst = value;
         emit sortNewestFirstChanged();
-        emit filteredNotesChanged();   // <-- БЫЛО ПРОПУЩЕНО
+        emit filteredNotesChanged();
+    }
+}
+
+QString NoteManager::tagFilter() const { return m_tagFilter; }
+void NoteManager::setTagFilter(const QString &tag)
+{
+    if (m_tagFilter != tag) {
+        m_tagFilter = tag;
+        emit tagFilterChanged();
+        emit filteredNotesChanged();
     }
 }
 
@@ -62,7 +79,9 @@ void NoteManager::addOrUpdateNote(const Note &note)
 }
 
 void NoteManager::addOrUpdateNoteFields(int id, const QString &title,
-                                        const QString &content, const QColor &color, bool pinned)
+                                        const QString &content, const QColor &color, bool pinned,
+                                        const QStringList &tags,
+                                        const QDateTime &reminder)
 {
     Note note;
     note.setId(id);
@@ -70,6 +89,8 @@ void NoteManager::addOrUpdateNoteFields(int id, const QString &title,
     note.setContent(content);
     note.setColor(color);
     note.setPinned(pinned);
+    note.setTags(tags);
+    note.setReminder(reminder);
     addOrUpdateNote(note);
 }
 
@@ -90,7 +111,7 @@ void NoteManager::togglePin(int id)
         if (n.id() == id) {
             n.setPinned(!n.isPinned());
             emit notesChanged();
-            emit filteredNotesChanged();   // <-- ДОБАВЛЕН
+            emit filteredNotesChanged();
             saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");
             break;
         }
@@ -108,6 +129,12 @@ QList<Note> NoteManager::filteredNotes() const
                                                !n.content().toLower().contains(query);
                                     }), result.end());
     }
+    if (!m_tagFilter.isEmpty()) {
+        result.erase(std::remove_if(result.begin(), result.end(),
+                                    [this](const Note &n) {
+                                        return !n.tags().contains(m_tagFilter);
+                                    }), result.end());
+    }
     std::sort(result.begin(), result.end(),
               [this](const Note &a, const Note &b) {
                   if (a.isPinned() != b.isPinned())
@@ -120,6 +147,26 @@ QList<Note> NoteManager::filteredNotes() const
     return result;
 }
 
+QStringList NoteManager::allTags() const
+{
+    QSet<QString> unique;
+    for (const auto &n : m_notes) {
+        for (const auto &t : n.tags())
+            unique.insert(t);
+    }
+    return unique.values();
+}
+
+QString NoteManager::highlightText(const QString &text, const QString &query) const
+{
+    if (query.isEmpty()) return text.toHtmlEscaped();
+    QString escaped = text.toHtmlEscaped();
+    QString escapedQuery = query.toHtmlEscaped();
+    escaped.replace(QRegularExpression(escapedQuery, QRegularExpression::CaseInsensitiveOption),
+                    "<b>\\0</b>");
+    return escaped;
+}
+
 bool NoteManager::loadFromFile(const QString &filename)
 {
     QFile file(filename);
@@ -128,11 +175,10 @@ bool NoteManager::loadFromFile(const QString &filename)
     file.close();
     if (!doc.isArray()) return false;
     m_notes.clear();
-    for (const auto &val : doc.array()) {
+    for (const auto &val : doc.array())
         m_notes.append(Note(val.toObject()));
-    }
     emit notesChanged();
-    emit filteredNotesChanged();   // после загрузки
+    emit filteredNotesChanged();
     return true;
 }
 
@@ -155,4 +201,23 @@ int NoteManager::nextId() const
     for (const auto &n : m_notes)
         if (n.id() > maxId) maxId = n.id();
     return maxId + 1;
+}
+
+void NoteManager::checkReminders()
+{
+    QDateTime now = QDateTime::currentDateTime();
+    for (const auto &note : m_notes) {
+        if (note.reminder().isValid() && note.reminder() <= now) {
+            emit reminderTriggered(note);
+            Note updated = note;
+            updated.setReminder(QDateTime());
+            for (auto &n : m_notes) {
+                if (n.id() == updated.id()) {
+                    n = updated;
+                    break;
+                }
+            }
+            saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");
+        }
+    }
 }

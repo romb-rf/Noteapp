@@ -5,6 +5,7 @@
 #include <QDateTime>
 #include <QColor>
 #include <QJsonObject>
+#include <QStringList>
 
 class Note
 {
@@ -16,6 +17,8 @@ class Note
     Q_PROPERTY(QDateTime modified READ modified WRITE setModified)
     Q_PROPERTY(QColor color READ color WRITE setColor)
     Q_PROPERTY(bool pinned READ isPinned WRITE setPinned)
+    Q_PROPERTY(QStringList tags READ tags WRITE setTags)
+    Q_PROPERTY(QDateTime reminder READ reminder WRITE setReminder)
 
 public:
     Note();
@@ -42,6 +45,12 @@ public:
     bool isPinned() const;
     void setPinned(bool pinned);
 
+    QStringList tags() const;
+    void setTags(const QStringList &tags);
+
+    QDateTime reminder() const;
+    void setReminder(const QDateTime &reminder);
+
     QJsonObject toJson() const;
 
 private:
@@ -52,6 +61,8 @@ private:
     QDateTime m_modified;
     QColor m_color = Qt::white;
     bool m_pinned = false;
+    QStringList m_tags;
+    QDateTime m_reminder;
 };
 
 #endif // NOTE_H

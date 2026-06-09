@@ -5,19 +5,19 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
-# Добавляем QuickControls2 для QQuickStyle
-find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
+# Добавлены Widgets для QSystemTrayIcon
+find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2 Widgets)
 
 qt_add_executable(NoteApp
     main.cpp
     note.h note.cpp
     notemanager.h notemanager.cpp
+    qml/main.qml qml/NoteDelegate.qml qml/NoteEditPage.qml qml/NotesListPage.qml
 )
 
-# Линкуем оба модуля
-target_link_libraries(NoteApp PRIVATE Qt6::Quick Qt6::QuickControls2)
+target_link_libraries(NoteApp PRIVATE Qt6::Quick Qt6::QuickControls2 Qt6::Widgets)
 
-# Копируем папку qml в каталог сборки
+# Копирование папки qml в каталог сборки
 add_custom_command(TARGET NoteApp POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
     "${CMAKE_SOURCE_DIR}/qml"

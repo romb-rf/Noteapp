@@ -1,0 +1,14 @@
+# ninja log v6
+21	204	8026895839433943	.qt/qml_imports/NoteApp_build.cmake	87e683910efac867
+204	1432	8026895850738805	NoteApp_autogen/mocs_compilation.cpp	ad6c2835712a37d9
+204	1432	8026895850738805	D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/NoteApp_autogen/mocs_compilation.cpp	ad6c2835712a37d9
+21	204	8026895839433943	D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qt/qml_imports/NoteApp_build.cmake	87e683910efac867
+204	1432	8026895850738805	D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/NoteApp_autogen/timestamp	ad6c2835712a37d9
+1445	5156	8026895851934427	CMakeFiles/NoteApp.dir/notemanager.cpp.obj	1ac8dfd9b9cb0c43
+204	1432	8026895850738805	NoteApp_autogen/timestamp	ad6c2835712a37d9
+1441	4163	8026895851889761	CMakeFiles/NoteApp.dir/note.cpp.obj	f4f59252f39822bf
+1433	4996	8026895851807303	CMakeFiles/NoteApp.dir/NoteApp_autogen/mocs_compilation.cpp.obj	c0ff093f5af7d5eb
+1437	9355	8026895851853482	CMakeFiles/NoteApp.dir/main.cpp.obj	9019659c51887bb7
+9355	10382	8026895931029159	NoteApp.exe	40207048dd5f53bb
+7	30	8026895836582392	CMakeFiles/clean.additional	27e0006dad6fcce0
+30	42	8026895836813662	clean	260276da41e36c09
