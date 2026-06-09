@@ -1,7 +1,7 @@
-#include <QApplication>            // <-- вместо QGuiApplication
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QtQuickControls2>
+#include <QQuickStyle>          // ← заменили <QtQuickControls2>
 #include <QSystemTrayIcon>
 #include <QMenu>
 #include <QAction>
@@ -10,6 +10,8 @@
 #include <QCoreApplication>
 #include "notemanager.h"
 #include "note.h"
+
+// ... остальной код без изменений
 
 // Вспомогательный класс для взаимодействия с треем из QML
 class TrayHelper : public QObject

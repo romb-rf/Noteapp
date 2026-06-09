@@ -43,6 +43,9 @@ public:
     bool loadFromFile(const QString &filename);
     bool saveToFile(const QString &filename) const;
 
+    void setStoragePath(const QString &path);
+    QString storagePath() const;
+
 signals:
     void notesChanged();
     void searchQueryChanged();
@@ -63,6 +66,7 @@ private:
     bool m_sortNewestFirst = true;
     QString m_tagFilter;
     QTimer *m_reminderTimer;
+    QString m_storagePath;
 };
 
 #endif // NOTEMANAGER_H

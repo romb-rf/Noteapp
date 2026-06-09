@@ -217,3 +217,5 @@ void NoteManager::checkReminders()
         }
     }
 }
+void NoteManager::setStoragePath(const QString &path) { m_storagePath = path; }
+QString NoteManager::storagePath() const { return m_storagePath; }

@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=E:/qt/Tools/mingw1310_64/bin/addr2line.exe
 
@@ -57,10 +60,36 @@ CMAKE_CXX_OUTPUT_EXTENSION:STRING=.obj
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=E:/qt/Tools/mingw1310_64/bin/gcc.exe
+//C compiler
+CMAKE_C_COMPILER:STRING=E:/qt/Tools/mingw1310_64/bin/gcc.exe
 
-CMAKE_C_OUTPUT_EXTENSION:STRING=
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=E:/qt/Tools/mingw1310_64/bin/gcc-ar.exe
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=E:/qt/Tools/mingw1310_64/bin/gcc-ranlib.exe
+
+//Flags used by the C compiler during all build types.
+CMAKE_C_FLAGS:STRING=
+
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the C compiler during MINSIZEREL builds.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the C compiler during RELWITHDEBINFO builds.
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
+CMAKE_C_OUTPUT_EXTENSION:STRING=.obj
+
+//Libraries linked by default with all C applications.
+CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=E:/qt/Tools/mingw1310_64/bin/dlltool.exe
@@ -194,13 +223,13 @@ CMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_6
 CMAKE_PROJECT_NAME:STATIC=NoteApp
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0
+CMAKE_PROJECT_VERSION:STATIC=0.1
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+CMAKE_PROJECT_VERSION_MINOR:STATIC=1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_PATCH:STATIC=
@@ -291,6 +320,37 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for googletest
+FETCHCONTENT_SOURCE_DIR_GOOGLETEST:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of googletest
+FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
+
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
+//Use Abseil and RE2. Requires Abseil and RE2 to be separately
+// added to the build.
+GTEST_HAS_ABSL:BOOL=OFF
+
+//Enable installation of googletest. (Projects embedding googletest
+// may want to turn this OFF.)
+INSTALL_GTEST:BOOL=ON
+
 //Value Computed by CMake
 NoteApp_BINARY_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug
 
@@ -373,12 +433,6 @@ Qt6QmlWorkerScript_DIR:PATH=E:/qt/6.10.2/mingw_64/lib/cmake/Qt6QmlWorkerScript
 //The directory containing a CMake configuration file for Qt6Qml.
 Qt6Qml_DIR:PATH=E:/qt/6.10.2/mingw_64/lib/cmake/Qt6Qml
 
-//The directory containing a CMake configuration file for Qt6QuickControls2.
-Qt6QuickControls2_DIR:PATH=E:/qt/6.10.2/mingw_64/lib/cmake/Qt6QuickControls2
-
-//The directory containing a CMake configuration file for Qt6QuickTemplates2.
-Qt6QuickTemplates2_DIR:PATH=E:/qt/6.10.2/mingw_64/lib/cmake/Qt6QuickTemplates2
-
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=E:/qt/6.10.2/mingw_64/lib/cmake/Qt6QuickTools
 
@@ -408,6 +462,52 @@ Vulkan_LIBRARY:FILEPATH=Vulkan_LIBRARY-NOTFOUND
 
 //Path to a program.
 WINDEPLOYQT_EXECUTABLE:FILEPATH=E:/qt/6.10.2/mingw_64/bin/windeployqt.exe
+
+//Value Computed by CMake
+gmock_BINARY_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-build/googlemock
+
+//Value Computed by CMake
+gmock_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-src/googlemock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Value Computed by CMake
+googletest-distribution_BINARY_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-build
+
+//Value Computed by CMake
+googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-src
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-build/googletest
+
+//Value Computed by CMake
+gtest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-src/googletest
+
+//Build gtest's sample programs.
+gtest_build_samples:BOOL=OFF
+
+//Build all of gtest's own tests.
+gtest_build_tests:BOOL=OFF
+
+//Disable uses of pthreads in gtest.
+gtest_disable_pthreads:BOOL=OFF
+
+//Use shared (DLL) run-time lib even when Google Test is built
+// as static lib.
+gtest_force_shared_crt:BOOL=OFF
+
+//Build gtest with internal symbols hidden in shared libraries.
+gtest_hide_internal_symbols:BOOL=OFF
 
 
 ########################
@@ -450,6 +550,24 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_STANDARD_LIBRARIES
 CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS
+CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
+CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
+CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
+CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
+CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_STANDARD_LIBRARIES
+CMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
@@ -528,7 +646,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -584,6 +702,10 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[D:/учёба/python.exe][cfound components: Interpreter ][v3.13.7()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Test HAVE_STDATOMIC
 HAVE_STDATOMIC:INTERNAL=1
 QTCREATOR_CMAKE_HELPER_DIRECTORY:INTERNAL=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/.qtcreator/cmake-helper
@@ -1202,32 +1324,6 @@ QT_FEATURE_quick_tableview:INTERNAL=ON
 QT_FEATURE_quick_treeview:INTERNAL=ON
 //Qt feature: quick_viewtransitions (from target Qt6::Quick)
 QT_FEATURE_quick_viewtransitions:INTERNAL=ON
-//Qt feature: quickcontrols2_basic (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_basic:INTERNAL=ON
-//Qt feature: quickcontrols2_fluentwinui3 (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_fluentwinui3:INTERNAL=ON
-//Qt feature: quickcontrols2_fusion (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_fusion:INTERNAL=ON
-//Qt feature: quickcontrols2_imagine (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_imagine:INTERNAL=ON
-//Qt feature: quickcontrols2_ios (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_ios:INTERNAL=OFF
-//Qt feature: quickcontrols2_macos (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_macos:INTERNAL=OFF
-//Qt feature: quickcontrols2_material (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_material:INTERNAL=ON
-//Qt feature: quickcontrols2_universal (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_universal:INTERNAL=ON
-//Qt feature: quickcontrols2_windows (from target Qt6::QuickControls2)
-QT_FEATURE_quickcontrols2_windows:INTERNAL=ON
-//Qt feature: quicktemplates2_calendar (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_calendar:INTERNAL=ON
-//Qt feature: quicktemplates2_container (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_container:INTERNAL=ON
-//Qt feature: quicktemplates2_hover (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_hover:INTERNAL=ON
-//Qt feature: quicktemplates2_multitouch (from target Qt6::QuickTemplates2)
-QT_FEATURE_quicktemplates2_multitouch:INTERNAL=ON
 //Qt feature: radiobutton (from target Qt6::Widgets)
 QT_FEATURE_radiobutton:INTERNAL=ON
 //Qt feature: raster_64bit (from target Qt6::Gui)
@@ -1592,5 +1688,33 @@ Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/NoteApp
+//Compiler reason failure
+_Python3_Compiler_REASON_FAILURE:INTERNAL=
+//Development reason failure
+_Python3_Development_REASON_FAILURE:INTERNAL=
+//Path to a program.
+_Python3_EXECUTABLE:INTERNAL=D:/учёба/python.exe
+//Path to a program.
+_Python3_EXECUTABLE_DEBUG:INTERNAL=_Python3_EXECUTABLE_DEBUG-NOTFOUND
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;7;64;32;<none>;cp313-win_amd64;;D:\єў╕ср\Lib;D:\єў╕ср\Lib;D:\єў╕ср\Lib\site-packages;D:\єў╕ср\Lib\site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=1175daac7422c67d3208c2810e1ed5f9
+//NumPy reason failure
+_Python3_NumPy_REASON_FAILURE:INTERNAL=
 __qt_qml_macros_module_base_dir:INTERNAL=E:/qt/6.10.2/mingw_64/lib/cmake/Qt6Qml
+cmake_package_name:INTERNAL=GTest
+generated_dir:INTERNAL=D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/_deps/googletest-build/googletest/generated
+//ADVANCED property for variable: gmock_build_tests
+gmock_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_samples
+gtest_build_samples-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_tests
+gtest_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_disable_pthreads
+gtest_disable_pthreads-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_force_shared_crt
+gtest_force_shared_crt-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_hide_internal_symbols
+gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
+targets_export_name:INTERNAL=GTestTargets
 

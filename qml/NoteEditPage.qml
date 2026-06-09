@@ -231,7 +231,7 @@ Page {
                         "#339af0",  // синий
                         "#ffd43b",  // жёлтый
                         "#ff6eb4",  // розовый
-                        "#ff922b"   // оранжевый (добавим)
+                        "#ff922b"   // оранжевый
                     ]
                     Repeater {
                         model: parent.colorList
@@ -275,7 +275,6 @@ Page {
                     radius: 14
                     color: parent.pressed ? "#6d28d9" : "#7c3aed"
                     layer.enabled: true
-
                 }
                 onClicked: {
                     if (titleField.text.trim() === "" && contentArea.text.trim() === "") {
@@ -283,8 +282,9 @@ Page {
                         return
                     }
                     var tagsArray = tagsField.text.split(",").map(t => t.trim()).filter(t => t !== "")
-                    // Преобразование даты из ДД.ММ.ГГГГ в ISO
-                    var reminder = new Date(0)
+
+                    // Подготовка напоминания: если поля не пусты – парсим, иначе – невалидный NaN
+                    var reminder = new Date(NaN)   // теперь по умолчанию невалидный
                     var dateStr = reminderDateField.text.trim()
                     var timeStr = reminderTimeField.text.trim()
                     if (dateStr !== "" && timeStr !== "") {
@@ -302,6 +302,7 @@ Page {
                             }
                         }
                     }
+
                     noteManager.addOrUpdateNoteFields(
                         noteId, titleField.text, contentArea.text, noteColor, notePinned,
                         tagsArray, reminder

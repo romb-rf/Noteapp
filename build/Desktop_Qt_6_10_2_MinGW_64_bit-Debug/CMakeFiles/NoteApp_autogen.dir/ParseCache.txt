@@ -731,97 +731,48 @@ D:/Noteapp/main.cpp
  mdp:D:/Noteapp/main.cpp
  mdp:D:/Noteapp/note.h
  mdp:D:/Noteapp/notemanager.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QByteArray
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QCoreApplication
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QCryptographicHash
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QDateTime
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QDeadlineTimer
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QEvent
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QFlags
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QHash
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QIODevice
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QJsonObject
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QList
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QMap
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QMargins
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QMetaType
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QMutex
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QObject
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QRect
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QRectF
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QScopedPointer
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QSharedDataPointer
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QSize
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QSizeF
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QString
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QStringList
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QTimer
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QUrl
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QVariant
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QtCore
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QtCoreDepends
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q17memory.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20algorithm.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20chrono.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20functional.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20iterator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20map.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20memory.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20type_traits.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20utility.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q20vector.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q23functional.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q23type_traits.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q23utility.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/q26numeric.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qabstractanimation.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qabstracteventdispatcher.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qabstractitemmodel.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qabstractnativeeventfilter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qabstractproxymodel.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qalloc.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qanimationgroup.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qanystringview.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qapplicationstatic.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qarraydata.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qarraydataops.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qarraydatapointer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qassert.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qassociativeiterable.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qatomic.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qatomic_cxx11.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qatomicscopedvaluerollback.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbasicatomic.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbasictimer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbindingstorage.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbitarray.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbuffer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbytearray.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbytearraylist.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbytearraymatcher.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qbytearrayview.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcache.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcalendar.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcborarray.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcborcommon.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcbormap.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcborstream.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcborstreamreader.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcborstreamwriter.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcborvalue.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qchar.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcheckedint_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qchronotimer.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcollator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcommandlineoption.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcommandlineparser.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcompare.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcompare_impl.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcomparehelpers.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcompilerdetection.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qconcatenatetablesproxymodel.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qconfig.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qconstructormacros.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcontainerfwd.h
@@ -831,136 +782,69 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcoreapplication.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcoreapplication_platform.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcoreevent.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qcryptographichash.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdatastream.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdatetime.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdeadlinetimer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdebug.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdir.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdiriterator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qdirlisting.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qeasingcurve.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qelapsedtimer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qendian.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qeventloop.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qexception.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qexceptionhandling.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfactoryinterface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfile.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfiledevice.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfileinfo.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfileselector.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfilesystemwatcher.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qflags.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfloat16.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qforeach.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfunctionaltools_impl.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfunctionpointer.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfuture.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfuture_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfutureinterface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfuturesynchronizer.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qfuturewatcher.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qgenericatomic.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qglobal.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qglobalstatic.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qhash.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qhashfunctions.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qidentityproxymodel.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qiodevice.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qiodevicebase.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qitemselectionmodel.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qiterable.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qiterator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qjsonarray.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qjsondocument.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qjsonobject.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qjsonparseerror.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qjsonvalue.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlatin1stringmatcher.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlatin1stringview.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlibrary.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlibraryinfo.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qline.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlist.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlocale.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlockfile.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qlogging.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qloggingcategory.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmalloc.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmap.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmargins.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmath.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmessageauthenticationcode.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmetacontainer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmetaobject.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmetatype.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmimedata.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmimedatabase.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmimetype.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qminmax.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qmutex.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qnamespace.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qnativeinterface.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qnumeric.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qobject.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qobject_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qobjectcleanuphandler.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qobjectdefs.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qobjectdefs_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qoperatingsystemversion.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qoverload.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpair.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qparallelanimationgroup.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpauseanimation.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpermissions.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qplugin.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpluginloader.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpoint.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpointer.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qprocess.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qprocessordetection.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpromise.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qproperty.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpropertyanimation.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qpropertyprivate.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qqueue.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qrandom.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qrangemodel.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qrangemodel_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qreadwritelock.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qrect.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qrefcount.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qregularexpression.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qresource.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qresultstore.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qrunnable.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsavefile.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qscopedpointer.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qscopedvaluerollback.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qscopeguard.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsemaphore.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsequentialanimationgroup.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsequentialiterable.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qset.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsettings.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qshareddata.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qshareddata_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsharedmemory.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsharedpointer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsharedpointer_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsignalmapper.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsimd.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsize.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsocketnotifier.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsortfilterproxymodel.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qspan.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstack.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstandardpaths.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstaticlatin1stringmatcher.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstdlibdetection.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstorageinfo.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstring.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringalgorithms.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringbuilder.h
@@ -968,15 +852,12 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringconverter_base.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringfwd.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringlist.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringlistmodel.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringliteral.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringmatcher.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringtokenizer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qstringview.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qswap.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsysinfo.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsystemdetection.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qsystemsemaphore.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtaggedpointer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtclasshelpermacros.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtconfiginclude.h
@@ -984,31 +865,17 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtcore-config.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtcoreexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtcoreglobal.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtcoreversion.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtdeprecationdefinitions.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtdeprecationmarkers.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtemporarydir.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtemporaryfile.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtenvironmentvariables.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtextboundaryfinder.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtextstream.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtformat_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qthread.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qthreadpool.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qthreadstorage.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtimeline.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtimer.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtimezone.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtipccommon.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtmetamacros.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtmocconstants.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtnoop.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtpreprocessorsupport.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtranslator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtransposeproxymodel.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtresource.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtsan_impl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtsymbolmacros.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qttranslation.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qttypetraits.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtversion.h
@@ -1017,328 +884,72 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtyperevision.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qtypes.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qurl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qurlquery.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qutf8stringview.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/quuid.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvariant.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvariantanimation.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvarianthash.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvariantlist.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvariantmap.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvarlengtharray.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qvector.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qversionnumber.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qversiontagging.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qwaitcondition.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qwineventnotifier.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qxmlstream.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qxpfunctional.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/qyieldcpu.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QAction
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QColor
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QIcon
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QImage
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QMatrix3x3
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QMatrix4x4
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QOpenGLContext
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QPaintDevice
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QPaintDeviceWindow
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QSurfaceFormat
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QTextDocument
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QTransform
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QWindow
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QtGui
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QtGuiDepends
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qabstractfileiconprovider.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qabstracttextdocumentlayout.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaccessibilityhints.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaccessible.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaccessible_base.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaccessiblebridge.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaccessibleobject.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaccessibleplugin.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaction.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qactiongroup.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qbackingstore.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qbitmap.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qbrush.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qclipboard.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qcolor.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qcolorspace.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qcolortransform.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qcursor.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qdesktopservices.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qdrag.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qevent.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qeventpoint.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qfilesystemmodel.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qfont.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qfontdatabase.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qfontinfo.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qfontmetrics.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qfontvariableaxis.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qgenericmatrix.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qgenericplugin.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qgenericpluginfactory.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qglyphrun.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qguiapplication.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qguiapplication_platform.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qicon.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qiconengine.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qiconengineplugin.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qimage.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qimageiohandler.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qimagereader.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qimagewriter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qinputdevice.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qinputmethod.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qkeysequence.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qmatrix4x4.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qmovie.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qoffscreensurface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qoffscreensurface_platform.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qopengl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qopenglcontext.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qopenglcontext_platform.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qopenglext.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qopenglextrafunctions.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qopenglfunctions.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpagedpaintdevice.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpagelayout.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpageranges.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpagesize.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpaintdevice.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpaintdevicewindow.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpaintengine.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpainter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpainterpath.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpainterstateguard.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpalette.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpdfoutputintent.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpdfwriter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpen.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpicture.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpixelformat.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpixmap.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpixmapcache.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpointingdevice.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qpolygon.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qquaternion.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrasterwindow.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrawfont.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qregion.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrgb.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrgba64.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrgbafloat.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qscreen.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qscreen_platform.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qsessionmanager.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qshortcut.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qstandarditemmodel.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qstatictext.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qstylehints.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qsurface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qsurfaceformat.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qsyntaxhighlighter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextcursor.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextdocument.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextdocumentfragment.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextdocumentwriter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextformat.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextlayout.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextlist.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextobject.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtextoption.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtexttable.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtgui-config.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtguiexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtguiglobal.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtguiversion.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtransform.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qundogroup.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qundostack.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qvalidator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qvector2d.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qvector3d.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qvector4d.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qvectornd.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qvulkaninstance.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindow.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindowdefs_win.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindowsmimeconverter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QNetworkAccessManager
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QNetworkRequest
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QSslConfiguration
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QSslError
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QSslSocket
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QTcpServer
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QtNetwork
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/QtNetworkDepends
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qabstractnetworkcache.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qabstractsocket.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qauthenticator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qdnslookup.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qdtls.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qformdatabuilder.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhostaddress.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhostinfo.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhstspolicy.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhttp1configuration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhttp2configuration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhttpheaders.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qhttpmultipart.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qlocalserver.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qlocalsocket.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkcookie.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkcookiejar.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkdatagram.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkdiskcache.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkinformation.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkinterface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkproxy.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkreply.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkrequest.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qnetworkrequestfactory.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qocspresponse.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qpassworddigestor.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qrestaccessmanager.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qrestreply.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qssl.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslcertificate.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslcertificateextension.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslcipher.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslconfiguration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qssldiffiehellmanparameters.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslellipticcurve.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslerror.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslkey.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslserver.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qsslsocket.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtcpserver.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtcpsocket.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtnetwork-config.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtnetworkexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtnetworkglobal.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtnetworkversion.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qudpsocket.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/QtOpenGL
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/QtOpenGLDepends
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglbuffer.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopengldebug.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglframebufferobject.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglpaintdevice.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglpixeltransferoptions.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglshaderprogram.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopengltexture.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopengltextureblitter.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopengltimerquery.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglversionfunctions.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglversionfunctionsfactory.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglversionprofile.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglvertexarrayobject.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qopenglwindow.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qtopenglexports.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qtopenglglobal.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtOpenGL/qtopenglversion.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/QJSValue
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/QQmlApplicationEngine
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/QQmlContext
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/QQmlEngine
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/QtQml
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/QtQmlDepends
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjsengine.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjslist.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjsmanagedvalue.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjsnumbercoercion.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjsprimitivevalue.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjsvalue.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qjsvalueiterator.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqml.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlapplicationengine.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlcomponent.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlcontext.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmldebug.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlengine.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlerror.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlexpression.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlextensioninterface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlextensionplugin.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlfile.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlfileselector.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlincubator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlinfo.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmllist.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlmoduleregistration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlnetworkaccessmanagerfactory.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlparserstatus.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlprivate.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlproperty.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlpropertymap.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlpropertyvaluesource.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlregistration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qqmlscriptstring.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqml-config.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlcompilerglobal.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlglobal.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlversion.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQmlIntegration/QtQmlIntegration
- mdp:E:/qt/6.10.2/mingw_64/include/QtQmlIntegration/QtQmlIntegrationDepends
  mdp:E:/qt/6.10.2/mingw_64/include/QtQmlIntegration/qqmlintegration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQmlIntegration/qtqmlintegrationversion.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/QQuickItem
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/QtQuick
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/QtQuickDepends
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickframebufferobject.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickgraphicsconfiguration.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickgraphicsdevice.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickimageprovider.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickitem.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickitemgrabresult.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickopenglutils.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickpainteditem.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickrendercontrol.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickrendertarget.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickrhiitem.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquicktextdocument.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickview.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qquickwindow.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgflatcolormaterial.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsggeometry.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgimagenode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgmaterial.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgmaterialshader.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgmaterialtype.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgninepatchnode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgnode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgrectanglenode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgrendererinterface.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgrendernode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgsimplerectnode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgsimpletexturenode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgtextnode.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgtexture.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgtexture_platform.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgtexturematerial.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgtextureprovider.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qsgvertexcolormaterial.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qtquick-config.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qtquickexports.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qtquickglobal.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuick/qtquickversion.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/QtQuickControls2
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/QtQuickControls2Depends
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qquickattachedpropertypropagator.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qquickstyle.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2exports.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2global.h
- mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2version.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/QApplication
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/QMenu
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/QSystemTrayIcon
@@ -1350,48 +961,6 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/qwidget.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/adxintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxbf16intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxcomplexintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxfp16intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxint8intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/amxtileintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx2intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx5124fmapsintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx5124vnniwintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bf16intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bf16vlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bitalgintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bwintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512cdintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512dqintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512erintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512fintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512fp16intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512fp16vlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512ifmaintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512ifmavlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512pfintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vbmi2intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vbmi2vlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vbmiintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vbmivlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vlbwintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vldqintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vnniintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vnnivlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vp2intersectintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vp2intersectvlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vpopcntdqintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vpopcntdqvlintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxifmaintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxneconvertintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniint8intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avxvnniintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmi2intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/bmiintrin.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic
@@ -1404,16 +973,12 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h
@@ -1423,10 +988,6 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h
@@ -1434,15 +995,9 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h
@@ -1450,15 +1005,11 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h
@@ -1466,11 +1017,8 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h
@@ -1499,7 +1047,6 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h
@@ -1514,9 +1061,7 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio
@@ -1524,11 +1069,9 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/experimental/source_location
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h
@@ -1536,36 +1079,24 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory_resource
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/optional
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/shared_mutex
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf
@@ -1598,75 +1129,16 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cetintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cldemoteintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clflushoptintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clwbintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/clzerointrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cmpccxaddintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/emmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/enqcmdintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/f16cintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/float.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/fmaintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/fxsrintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/gfniintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/hresetintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/ia32intrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/immintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/keylockerintrin.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/lwpintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/lzcntintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/movdirintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mwaitintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mwaitxintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/pconfigintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/pkuintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/pmmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/popcntintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/prfchiintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/prfchwintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/raointintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/rdseedintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/rtmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/serializeintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/sgxintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/shaintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/smmintrin.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h
  mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tbmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tmmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tsxldtrkintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/uintrintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/vaesintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/vpclmulqdqintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/waitpkgintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wbnoinvdintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wmmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/x86gprintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xsavecintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xsaveintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xsaveoptintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xsavesintrin.h
- mdp:E:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xtestintrin.h
- mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/GL/gl.h
  mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw.h
  mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_mac.h
  mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_off_t.h
@@ -1702,6 +1174,3 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
- mdp:E:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
-D:/Noteapp/note.cpp
-D:/Noteapp/notemanager.cpp
