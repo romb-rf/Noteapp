@@ -4,9 +4,13 @@ D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/NoteApp_autogen/include/ma
   D:/Noteapp/notemanager.h \
   E:/qt/6.10.2/mingw_64/include/QtCore/QCoreApplication \
   E:/qt/6.10.2/mingw_64/include/QtCore/QDateTime \
+  E:/qt/6.10.2/mingw_64/include/QtCore/QEvent \
   E:/qt/6.10.2/mingw_64/include/QtCore/QJsonObject \
   E:/qt/6.10.2/mingw_64/include/QtCore/QList \
+  E:/qt/6.10.2/mingw_64/include/QtCore/QMargins \
+  E:/qt/6.10.2/mingw_64/include/QtCore/QMetaObject \
   E:/qt/6.10.2/mingw_64/include/QtCore/QObject \
+  E:/qt/6.10.2/mingw_64/include/QtCore/QRect \
   E:/qt/6.10.2/mingw_64/include/QtCore/QString \
   E:/qt/6.10.2/mingw_64/include/QtCore/QStringList \
   E:/qt/6.10.2/mingw_64/include/QtCore/QTimer \
@@ -166,6 +170,7 @@ D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/NoteApp_autogen/include/ma
   E:/qt/6.10.2/mingw_64/include/QtGui/QAction \
   E:/qt/6.10.2/mingw_64/include/QtGui/QColor \
   E:/qt/6.10.2/mingw_64/include/QtGui/QIcon \
+  E:/qt/6.10.2/mingw_64/include/QtGui/QWindow \
   E:/qt/6.10.2/mingw_64/include/QtGui/qaction.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qbitmap.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qbrush.h \
@@ -189,10 +194,13 @@ D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/NoteApp_autogen/include/ma
   E:/qt/6.10.2/mingw_64/include/QtGui/qregion.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qrgb.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qrgba64.h \
+  E:/qt/6.10.2/mingw_64/include/QtGui/qsurface.h \
+  E:/qt/6.10.2/mingw_64/include/QtGui/qsurfaceformat.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qtgui-config.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qtguiexports.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qtguiglobal.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qtransform.h \
+  E:/qt/6.10.2/mingw_64/include/QtGui/qwindow.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qwindowdefs.h \
   E:/qt/6.10.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   E:/qt/6.10.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
@@ -221,6 +229,10 @@ D:/Noteapp/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/NoteApp_autogen/include/ma
   E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlexports.h \
   E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlglobal.h \
   E:/qt/6.10.2/mingw_64/include/QtQmlIntegration/qqmlintegration.h \
+  E:/qt/6.10.2/mingw_64/include/QtQuickControls2/QQuickStyle \
+  E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qquickstyle.h \
+  E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2exports.h \
+  E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2global.h \
   E:/qt/6.10.2/mingw_64/include/QtWidgets/QApplication \
   E:/qt/6.10.2/mingw_64/include/QtWidgets/QMenu \
   E:/qt/6.10.2/mingw_64/include/QtWidgets/QSystemTrayIcon \

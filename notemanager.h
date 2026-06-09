@@ -38,7 +38,7 @@ public:
 
     Q_INVOKABLE QList<Note> filteredNotes() const;
     Q_INVOKABLE QStringList allTags() const;
-    Q_INVOKABLE QString highlightText(const QString &text, const QString &query) const;   // обязательно Q_INVOKABLE
+    //Q_INVOKABLE QString highlightText(const QString &text, const QString &query) const;   // обязательно Q_INVOKABLE
 
     bool loadFromFile(const QString &filename);
     bool saveToFile(const QString &filename) const;

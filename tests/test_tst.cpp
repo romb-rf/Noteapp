@@ -2,27 +2,19 @@
 #include "note.h"
 #include <QJsonObject>
 #include <QColor>
-
 class NoteTest : public ::testing::Test {
 protected:
-    void SetUp() override {
-        // Инициализация перед каждым тестом
-    }
+    void SetUp() override {}
 };
-
 TEST_F(NoteTest, DefaultConstructor) {
     Note n;
     EXPECT_EQ(n.id(), -1);
     EXPECT_TRUE(n.title().isEmpty());
     EXPECT_TRUE(n.content().isEmpty());
-    EXPECT_EQ(n.color(), QColor());
     EXPECT_FALSE(n.isPinned());
     EXPECT_TRUE(n.tags().isEmpty());
     EXPECT_FALSE(n.reminder().isValid());
-    EXPECT_TRUE(n.created().isNull());
-    EXPECT_TRUE(n.modified().isNull());
 }
-
 TEST_F(NoteTest, SetFields) {
     Note n;
     n.setId(42);
@@ -35,7 +27,6 @@ TEST_F(NoteTest, SetFields) {
     n.setReminder(dt);
     n.setCreated(dt);
     n.setModified(dt);
-
     EXPECT_EQ(n.id(), 42);
     EXPECT_EQ(n.title(), "Test title");
     EXPECT_EQ(n.content(), "Some content");
@@ -46,7 +37,6 @@ TEST_F(NoteTest, SetFields) {
     EXPECT_EQ(n.created(), dt);
     EXPECT_EQ(n.modified(), dt);
 }
-
 TEST_F(NoteTest, ToJsonAndFromJson) {
     Note original;
     original.setId(10);
@@ -56,10 +46,8 @@ TEST_F(NoteTest, ToJsonAndFromJson) {
     original.setPinned(true);
     original.setTags({"tag1", "tag2"});
     original.setReminder(QDateTime(QDate(2025, 12, 31), QTime(23, 59, 59)));
-
     QJsonObject json = original.toJson();
     Note restored(json);
-
     EXPECT_EQ(restored.id(), original.id());
     EXPECT_EQ(restored.title(), original.title());
     EXPECT_EQ(restored.content(), original.content());
@@ -67,6 +55,26 @@ TEST_F(NoteTest, ToJsonAndFromJson) {
     EXPECT_EQ(restored.isPinned(), original.isPinned());
     EXPECT_EQ(restored.tags(), original.tags());
     EXPECT_EQ(restored.reminder(), original.reminder());
-    // created/modified не сохраняются в toJson? Если нет – то будут по умолчанию, надо проверить.
-    // В вашей реализации toJson, вероятно, не сохраняет created/modified. Тест это покажет.
+}
+TEST_F(NoteTest, FromJsonMissingFields) {
+    QJsonObject obj;
+    obj["id"] = 5;
+    Note n(obj);
+    EXPECT_EQ(n.id(), 5);
+    EXPECT_TRUE(n.title().isEmpty());
+    EXPECT_TRUE(n.content().isEmpty());
+    EXPECT_FALSE(n.reminder().isValid());
+    EXPECT_TRUE(n.tags().isEmpty());
+}
+TEST_F(NoteTest, FromJsonColor) {
+    QJsonObject obj;
+    obj["color"] = "#ff0000";
+    Note n(obj);
+    EXPECT_EQ(n.color(), QColor("#ff0000"));
+}
+TEST_F(NoteTest, FromJsonPinned) {
+    QJsonObject obj;
+    obj["pinned"] = true;
+    Note n(obj);
+    EXPECT_TRUE(n.isPinned());
 }

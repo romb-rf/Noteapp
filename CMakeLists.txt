@@ -5,7 +5,6 @@ project(NoteApp VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# --- 1. Загрузка Google Test ---
 include(FetchContent)
 FetchContent_Declare(
   googletest
@@ -14,30 +13,29 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-# --- 2. Поиск Qt ---
-find_package(Qt6 REQUIRED COMPONENTS Core Quick Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core Quick Widgets QuickControls2)
 qt_standard_project_setup(REQUIRES 6.8)
 
-# --- 3. Статическая библиотека с ядром (логика без GUI) ---
-# Содержит классы Note и NoteManager, а также вспомогательные модули
+
 add_library(notecore STATIC
     note.cpp
     notemanager.cpp
-    # добавьте другие .cpp файлы, если есть (например, jsonstorage.cpp)
 )
 target_include_directories(notecore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(notecore PUBLIC Qt6::Core Qt6::Gui)
-
-# --- 4. Основное приложение (GUI) ---
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/qml DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 qt_add_executable(NoteApp
     main.cpp
-    # другие файлы с виджетами / визуализацией (если есть)
+
 )
 
 qt_add_qml_module(NoteApp
     URI NoteApp
     QML_FILES
         qml/main.qml
+        qml/NoteDelegate.qml
+        qml/NoteEditPage.qml
+        qml/NotesListPage.qml
         # другие qml-файлы
     SOURCES
         note.h
@@ -49,7 +47,7 @@ target_link_libraries(NoteApp PRIVATE
     notecore
     Qt6::Quick
     Qt6::Widgets
-    Qt6::QuickControls2   # ← добавить эту строку
+    Qt6::QuickControls2   # <-- добавить эту строку
 )
 
 # --- 5. Копирование Qt DLL и плагинов ---

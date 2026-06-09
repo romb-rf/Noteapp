@@ -733,9 +733,13 @@ D:/Noteapp/main.cpp
  mdp:D:/Noteapp/notemanager.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QCoreApplication
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QDateTime
+ mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QEvent
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QJsonObject
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QList
+ mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QMargins
+ mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QMetaObject
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QObject
+ mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QRect
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QString
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QStringList
  mdp:E:/qt/6.10.2/mingw_64/include/QtCore/QTimer
@@ -895,6 +899,7 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QAction
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QColor
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QIcon
+ mdp:E:/qt/6.10.2/mingw_64/include/QtGui/QWindow
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qaction.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qbitmap.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qbrush.h
@@ -918,10 +923,13 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qregion.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrgb.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qrgba64.h
+ mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qsurface.h
+ mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qsurfaceformat.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtgui-config.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtguiexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtguiglobal.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qtransform.h
+ mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindow.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtNetwork/qtnetwork-config.h
@@ -950,6 +958,10 @@ D:/Noteapp/main.cpp
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlexports.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQml/qtqmlglobal.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtQmlIntegration/qqmlintegration.h
+ mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/QQuickStyle
+ mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qquickstyle.h
+ mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2exports.h
+ mdp:E:/qt/6.10.2/mingw_64/include/QtQuickControls2/qtquickcontrols2global.h
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/QApplication
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/QMenu
  mdp:E:/qt/6.10.2/mingw_64/include/QtWidgets/QSystemTrayIcon

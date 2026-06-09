@@ -1,17 +1,17 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QQuickStyle>          // ← заменили <QtQuickControls2>
+#include <QQuickStyle>          // вместо <QtQuickControls2>
 #include <QSystemTrayIcon>
 #include <QMenu>
 #include <QAction>
 #include <QIcon>
 #include <QTimer>
 #include <QCoreApplication>
+#include <QWindow>              // для QWindow
+#include <QMetaObject>          // для invokeMethod
 #include "notemanager.h"
 #include "note.h"
-
-// ... остальной код без изменений
 
 // Вспомогательный класс для взаимодействия с треем из QML
 class TrayHelper : public QObject
@@ -44,7 +44,7 @@ private:
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);      // <-- QApplication вместо QGuiApplication
+    QApplication app(argc, argv);
     app.setQuitOnLastWindowClosed(false);
 
     QQuickStyle::setStyle("Basic");
@@ -59,15 +59,14 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("noteManager", &manager);
 
-    QString mainQml = QCoreApplication::applicationDirPath() + "/qml/main.qml";
-    const QUrl url = QUrl::fromLocalFile(mainQml);
+    engine.load(QUrl("qml/main.qml"));
 
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-                         if (!obj && url == objUrl)
-                             QCoreApplication::exit(-1);
-                     }, Qt::QueuedConnection);
-    engine.load(url);
+    // QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
+    //                  &app, [url](QObject *obj, const QUrl &objUrl) {
+    //                      if (!obj && url == objUrl)
+    //                          QCoreApplication::exit(-1);
+    //                  }, Qt::QueuedConnection);
+    // engine.load(url);
 
     // Получаем корневое окно
     QObject *rootObject = engine.rootObjects().value(0);

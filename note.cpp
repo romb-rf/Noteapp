@@ -12,6 +12,7 @@ Note::Note(const QJsonObject &json)
     m_modified = QDateTime::fromString(json.value("modified").toString(), Qt::ISODate);
     if (json.contains("color"))
         m_color = QColor(json.value("color").toString());
+    else m_color = QColor();
     m_pinned = json.value("pinned").toBool(false);
     if (json.contains("tags")) {
         const QJsonArray arr = json["tags"].toArray();

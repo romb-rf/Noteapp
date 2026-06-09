@@ -157,15 +157,27 @@ QStringList NoteManager::allTags() const
     return unique.values();
 }
 
-QString NoteManager::highlightText(const QString &text, const QString &query) const
-{
-    if (query.isEmpty()) return text.toHtmlEscaped();
-    QString escaped = text.toHtmlEscaped();
-    QString escapedQuery = query.toHtmlEscaped();
-    escaped.replace(QRegularExpression(escapedQuery, QRegularExpression::CaseInsensitiveOption),
-                    "<b>\\0</b>");
-    return escaped;
-}
+// QString NoteManager::highlightText(const QString &text, const QString &query) const
+// {
+//     if (query.isEmpty())
+//         return text.toHtmlEscaped();
+
+//     QString result;
+//     QString lowerText = text.toLower();
+//     QString lowerQuery = query.toLower();
+//     int pos = 0;
+//     while (pos < text.length()) {
+//         int idx = lowerText.indexOf(lowerQuery, pos);
+//         if (idx == -1) {
+//             result += text.mid(pos).toHtmlEscaped();
+//             break;
+//         }
+//         result += text.mid(pos, idx - pos).toHtmlEscaped();
+//         result += "<b>" + text.mid(idx, query.length()).toHtmlEscaped() + "</b>";
+//         pos = idx + query.length();
+//     }
+//     return result;
+// }
 
 bool NoteManager::loadFromFile(const QString &filename)
 {
