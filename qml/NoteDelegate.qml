@@ -11,9 +11,15 @@ Rectangle {
     border.color: "#464660"
     clip: true
 
-    // Тень
     layer.enabled: true
 
+
+    // Общая область клика – на заднем плане, чтобы не перекрывать кнопку закрепления
+    MouseArea {
+        id: cardMouseArea
+        anchors.fill: parent
+        onClicked: delegateRoot.clicked()
+    }
 
     // Цветовая полоска слева
     Rectangle {
@@ -24,6 +30,7 @@ Rectangle {
         color: modelData.color
     }
 
+    // Содержимое карточки
     RowLayout {
         anchors.fill: parent
         anchors.leftMargin: 18
@@ -61,26 +68,24 @@ Rectangle {
             }
         }
 
-        // Кнопка закрепления
-        ToolButton {
-            text: modelData.pinned ? "📌" : "📍"
-            font.pixelSize: 20
-            onClicked: {
-                console.log("Toggle pin for id:", modelData.id)  // для отладки
-                noteManager.togglePin(modelData.id)
+        // Кнопка закрепления (со своим обработчиком, поверх общей MouseArea)
+        Rectangle {
+            width: 40; height: 40; radius: 8
+            color: pinMouse.pressed ? "#4a4a6a" : "transparent"
+            Text {
+                anchors.centerIn: parent
+                text: modelData.pinned ? "📌" : "📍"
+                font.pixelSize: 20
+            }
+            MouseArea {
+                id: pinMouse
+                anchors.fill: parent
+                onClicked: noteManager.togglePin(modelData.id)
             }
         }
     }
 
-    // Анимация нажатия
-    MouseArea {
-        id: mouseArea
-        anchors.fill: parent
-        onClicked: delegateRoot.clicked()
-        onPressed: delegateRoot.scale = 0.97
-        onReleased: delegateRoot.scale = 1.0
-    }
-
+    // Анимация нажатия (можно оставить для красоты)
     Behavior on scale {
         NumberAnimation { duration: 150; easing.type: Easing.OutQuad }
     }

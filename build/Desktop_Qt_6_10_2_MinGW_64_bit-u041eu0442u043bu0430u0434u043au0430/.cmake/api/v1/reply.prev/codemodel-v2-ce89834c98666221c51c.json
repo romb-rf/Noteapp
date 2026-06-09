@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "NoteApp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "NoteApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NoteApp-Debug-f0d2d6fa5e1d086ddf38.json",
+					"name" : "NoteApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NoteApp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NoteApp_autogen-Debug-6d58b5bfec26b1ce5606.json",
+					"name" : "NoteApp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NoteApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NoteApp_autogen_timestamp_deps-Debug-8d46b9096d259915b5ae.json",
+					"name" : "NoteApp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NoteApp_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NoteApp_qmlimportscan-Debug-45dcafae30f4c8b82835.json",
+					"name" : "NoteApp_qmlimportscan",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/ProgramData/QtCreator/Links/4248860528d4e123f55ba20e5b8b707b",
+		"source" : "C:/ProgramData/QtCreator/Links/1da9d33b4e9f55e043f17e03ccf6e3f7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

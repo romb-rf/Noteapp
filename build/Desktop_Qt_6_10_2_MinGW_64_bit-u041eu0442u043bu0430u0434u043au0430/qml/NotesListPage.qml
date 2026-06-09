@@ -5,12 +5,6 @@ import QtQuick.Layouts
 Page {
     id: page
 
-    // Вызывается из main.qml после закрытия редактора, чтобы обновить список
-    function refreshList() {
-        listView.model = null
-        listView.model = noteManager.filteredNotes
-    }
-
     background: Rectangle {
         gradient: Gradient {
             GradientStop { position: 0.0; color: "#2b2b3c" }
@@ -19,18 +13,22 @@ Page {
     }
 
     header: ToolBar {
+        // Увеличенная высота шапки
+        height: 56
         background: Rectangle {
             color: "#2b2b3c"
-            opacity: 0.95
+            // Тонкая линия снизу
             Rectangle {
                 anchors.bottom: parent.bottom
-                width: parent.width; height: 1
+                width: parent.width
+                height: 1
                 color: "#444455"
             }
         }
         RowLayout {
             anchors.fill: parent
-            anchors.leftMargin: 16; anchors.rightMargin: 16
+            anchors.leftMargin: 16
+            anchors.rightMargin: 16
             spacing: 12
 
             Label {
@@ -53,6 +51,7 @@ Page {
                 onTextChanged: noteManager.searchQuery = text
             }
 
+            // Кнопка сортировки
             Rectangle {
                 width: 40; height: 40
                 radius: 10
@@ -76,6 +75,7 @@ Page {
         anchors.fill: parent
         anchors.topMargin: 10
 
+        // Пустое состояние
         Column {
             anchors.centerIn: parent
             spacing: 16
@@ -102,6 +102,7 @@ Page {
             }
         }
 
+        // Список заметок
         ListView {
             id: listView
             anchors.fill: parent
@@ -118,31 +119,43 @@ Page {
         }
     }
 
+    // Исправленная кнопка добавления заметки — теперь идеально круглая и ровная
     RoundButton {
         id: addButton
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        anchors.margins: 24
-        width: 60; height: 60
+        anchors.margins: 20
+        width: 56; height: 56
+        radius: 28                       // половина ширины
         text: "+"
-        font.pixelSize: 28
-        palette.button: "#7c3aed"
-        palette.buttonText: "#ffffff"
+        font.pixelSize: 24
+        font.bold: true
+
+        // Кастомные цвета
+        contentItem: Text {
+            text: addButton.text
+            color: "#ffffff"
+            font: addButton.font
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+        }
 
         background: Rectangle {
-            radius: 30
+            radius: 28
             color: addButton.pressed ? "#6d28d9" : "#7c3aed"
+            // Тень
             layer.enabled: true
 
         }
 
         onClicked: window.openEditor(-1)
 
+        // Лёгкая анимация при наведении
         SequentialAnimation on scale {
             running: addButton.hovered
             loops: Animation.Infinite
-            NumberAnimation { from: 1.0; to: 1.05; duration: 800; easing.type: Easing.InOutSine }
-            NumberAnimation { from: 1.05; to: 1.0; duration: 800; easing.type: Easing.InOutSine }
+            NumberAnimation { from: 1.0; to: 1.08; duration: 800; easing.type: Easing.InOutSine }
+            NumberAnimation { from: 1.08; to: 1.0; duration: 800; easing.type: Easing.InOutSine }
         }
     }
 }

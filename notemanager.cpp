@@ -3,8 +3,9 @@
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QJsonObject>
-#include <algorithm>
 #include <QCoreApplication>
+#include <algorithm>
+
 NoteManager::NoteManager(QObject *parent) : QObject(parent) {}
 
 QList<Note> NoteManager::notes() const { return m_notes; }
@@ -15,8 +16,7 @@ void NoteManager::setSearchQuery(const QString &query)
     if (m_searchQuery != query) {
         m_searchQuery = query;
         emit searchQueryChanged();
-        emit notesChanged();
-        emit filteredNotesChanged();
+        emit filteredNotesChanged();   // обновление поиска
     }
 }
 
@@ -26,14 +26,14 @@ void NoteManager::setSortNewestFirst(bool value)
     if (m_sortNewestFirst != value) {
         m_sortNewestFirst = value;
         emit sortNewestFirstChanged();
-        emit filteredNotesChanged();   // <-- ДОБАВИТЬ
+        emit filteredNotesChanged();   // <-- БЫЛО ПРОПУЩЕНО
     }
 }
+
 Note NoteManager::noteById(int id) const
 {
     for (const auto &n : m_notes) {
-        if (n.id() == id)
-            return n;
+        if (n.id() == id) return n;
     }
     return Note();
 }
@@ -58,7 +58,6 @@ void NoteManager::addOrUpdateNote(const Note &note)
     }
     emit notesChanged();
     emit filteredNotesChanged();
-    // Автоматическое сохранение при изменениях (можно отключить, если не нужно)
     saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");
 }
 
@@ -91,13 +90,12 @@ void NoteManager::togglePin(int id)
         if (n.id() == id) {
             n.setPinned(!n.isPinned());
             emit notesChanged();
-            emit filteredNotesChanged();   // <-- ДОБАВИТЬ
-            saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");    // или QCoreApplication::applicationDirPath() + "/notes.json"
+            emit filteredNotesChanged();   // <-- ДОБАВЛЕН
+            saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");
             break;
         }
     }
 }
-
 
 QList<Note> NoteManager::filteredNotes() const
 {
@@ -125,17 +123,16 @@ QList<Note> NoteManager::filteredNotes() const
 bool NoteManager::loadFromFile(const QString &filename)
 {
     QFile file(filename);
-    if (!file.open(QIODevice::ReadOnly))
-        return false;
+    if (!file.open(QIODevice::ReadOnly)) return false;
     QJsonDocument doc = QJsonDocument::fromJson(file.readAll());
     file.close();
-    if (!doc.isArray())
-        return false;
+    if (!doc.isArray()) return false;
     m_notes.clear();
     for (const auto &val : doc.array()) {
         m_notes.append(Note(val.toObject()));
     }
     emit notesChanged();
+    emit filteredNotesChanged();   // после загрузки
     return true;
 }
 
@@ -145,23 +142,17 @@ bool NoteManager::saveToFile(const QString &filename) const
     for (const auto &n : m_notes)
         arr.append(n.toJson());
     QFile file(filename);
-    if (!file.open(QIODevice::WriteOnly))
-        return false;
+    if (!file.open(QIODevice::WriteOnly)) return false;
     file.write(QJsonDocument(arr).toJson(QJsonDocument::Indented));
     file.close();
     return true;
 }
 
-void NoteManager::assignNewId(Note &note)
-{
-    note.setId(nextId());
-}
-
+void NoteManager::assignNewId(Note &note) { note.setId(nextId()); }
 int NoteManager::nextId() const
 {
     int maxId = 0;
     for (const auto &n : m_notes)
-        if (n.id() > maxId)
-            maxId = n.id();
+        if (n.id() > maxId) maxId = n.id();
     return maxId + 1;
 }

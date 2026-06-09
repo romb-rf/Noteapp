@@ -14,7 +14,6 @@ Page {
     signal saveClicked()
     signal backClicked()
 
-    // Функция загрузки данных заметки по id
     function loadNote(id) {
         if (id >= 0) {
             var noteObj = noteManager.noteById(id)
@@ -28,7 +27,6 @@ Page {
                     : ""
             }
         } else {
-            // Новая заметка — сбрасываем поля
             noteTitle = ""
             noteContent = ""
             noteColor = "#ffffff"
@@ -37,10 +35,7 @@ Page {
         }
     }
 
-    // При изменении noteId (открытие другой заметки) обновляем поля
     onNoteIdChanged: loadNote(noteId)
-
-    // При первом создании компонента тоже инициализируем
     Component.onCompleted: loadNote(noteId)
 
     background: Rectangle {
@@ -50,19 +45,23 @@ Page {
         }
     }
 
+    // Шапка как в основном окне: высота 56, отступы 16, тонкий разделитель
     header: ToolBar {
+        height: 56
         background: Rectangle {
             color: "#2b2b3c"
             Rectangle {
                 anchors.bottom: parent.bottom
-                width: parent.width; height: 1
+                width: parent.width
+                height: 1
                 color: "#444455"
             }
         }
         RowLayout {
             anchors.fill: parent
-            anchors.margins: 8
-            spacing: 8
+            anchors.leftMargin: 16
+            anchors.rightMargin: 16
+            spacing: 12
 
             Rectangle {
                 width: 40; height: 40
@@ -111,12 +110,18 @@ Page {
         }
     }
 
-    ScrollView {
+    Flickable {
         anchors.fill: parent
-        padding: 20
+        contentWidth: width
+        contentHeight: layout.implicitHeight + 40
+        boundsBehavior: Flickable.StopAtBounds
+        clip: true
 
         ColumnLayout {
-            width: parent.width
+            id: layout
+            width: parent.width - 40
+            x: 20
+            y: 20
             spacing: 20
 
             ColumnLayout {
@@ -128,24 +133,23 @@ Page {
                     font.letterSpacing: 1.5
                     color: "#8b5cf6"
                 }
-                Rectangle {
+                TextArea {
+                    id: titleField
                     Layout.fillWidth: true
-                    height: titleField.implicitHeight + 16
-                    radius: 14
-                    color: "#323248"
-                    border.color: "#4a4a6a"
-                    TextInput {
-                        id: titleField
-                        anchors.fill: parent
-                        anchors.margins: 12
-                        text: noteTitle
-                        color: "#ffffff"
-                        font.pixelSize: 20
-                        font.bold: true
-                        verticalAlignment: TextInput.AlignVCenter
-                        activeFocusOnPress: true
-                        selectionColor: "#7c3aed"
-                        selectByMouse: true
+                    Layout.minimumHeight: 50
+                    text: noteTitle
+                    color: "#ffffff"
+                    font.pixelSize: 20
+                    font.bold: true
+                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                    placeholderText: "Введите заголовок"
+                    placeholderTextColor: "#6b6b80"
+                    selectionColor: "#7c3aed"
+                    selectByMouse: true
+                    background: Rectangle {
+                        radius: 14
+                        color: "#323248"
+                        border.color: "#4a4a6a"
                     }
                 }
             }
@@ -159,25 +163,22 @@ Page {
                     font.letterSpacing: 1.5
                     color: "#8b5cf6"
                 }
-                Rectangle {
+                TextArea {
+                    id: contentArea
                     Layout.fillWidth: true
-                    height: Math.max(200, contentArea.implicitHeight + 24)
-                    radius: 14
-                    color: "#323248"
-                    border.color: "#4a4a6a"
-                    TextArea {
-                        id: contentArea
-                        anchors.fill: parent
-                        anchors.margins: 12
-                        text: noteContent
-                        color: "#e0e0ff"
-                        font.pixelSize: 15
-                        wrapMode: Text.WordWrap
-                        placeholderText: "Начните писать..."
-                        placeholderTextColor: "#6b6b80"
-                        background: null
-                        selectionColor: "#7c3aed"
-                        selectByMouse: true
+                    Layout.minimumHeight: 200
+                    text: noteContent
+                    color: "#e0e0ff"
+                    font.pixelSize: 15
+                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                    placeholderText: "Начните писать..."
+                    placeholderTextColor: "#6b6b80"
+                    selectionColor: "#7c3aed"
+                    selectByMouse: true
+                    background: Rectangle {
+                        radius: 14
+                        color: "#323248"
+                        border.color: "#4a4a6a"
                     }
                 }
             }

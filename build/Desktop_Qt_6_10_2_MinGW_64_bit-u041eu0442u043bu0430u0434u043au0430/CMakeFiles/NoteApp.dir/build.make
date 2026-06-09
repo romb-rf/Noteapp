@@ -149,6 +149,7 @@ NoteApp.exe: CMakeFiles/NoteApp.dir/main.cpp.obj
 NoteApp.exe: CMakeFiles/NoteApp.dir/note.cpp.obj
 NoteApp.exe: CMakeFiles/NoteApp.dir/notemanager.cpp.obj
 NoteApp.exe: CMakeFiles/NoteApp.dir/build.make
+NoteApp.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6QuickControls2.a
 NoteApp.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a
 NoteApp.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a
 NoteApp.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a
