@@ -11,7 +11,8 @@ Page {
     property bool notePinned: false
     property string noteCreated: ""
     property string noteTags: ""
-    property date noteReminder: new Date(0)
+    property string noteReminderDate: ""   // ДД.ММ.ГГГГ
+    property string noteReminderTime: ""   // ЧЧ:ММ
 
     signal saveClicked()
     signal backClicked()
@@ -25,14 +26,21 @@ Page {
                 noteColor = noteObj.color || "#ffffff"
                 notePinned = noteObj.pinned || false
                 noteTags = noteObj.tags ? noteObj.tags.join(", ") : ""
-                noteReminder = noteObj.reminder ? new Date(noteObj.reminder) : new Date(0)
+                if (noteObj.reminder) {
+                    var remDate = new Date(noteObj.reminder)
+                    noteReminderDate = Qt.formatDate(remDate, "dd.MM.yyyy")
+                    noteReminderTime = Qt.formatTime(remDate, "hh:mm")
+                } else {
+                    noteReminderDate = ""
+                    noteReminderTime = ""
+                }
                 noteCreated = noteObj.created
                     ? new Date(noteObj.created).toLocaleString(Qt.locale(), "yyyy-MM-dd hh:mm")
                     : ""
             }
         } else {
             noteTitle = ""; noteContent = ""; noteColor = "#ffffff"; notePinned = false
-            noteTags = ""; noteReminder = new Date(0); noteCreated = ""
+            noteTags = ""; noteReminderDate = ""; noteReminderTime = ""; noteCreated = ""
         }
     }
 
@@ -174,18 +182,22 @@ Page {
                     TextField {
                         id: reminderDateField
                         Layout.fillWidth: true
-                        text: noteReminder.getTime() ? Qt.formatDate(noteReminder, "yyyy-MM-dd") : ""
-                        placeholderText: "ГГГГ-ММ-ДД"
+                        text: noteReminderDate
+                        placeholderText: "ДД.ММ.ГГГГ"
                         color: "#ffffff"
+                        inputMethodHints: Qt.ImhDate
                         background: Rectangle { radius: 12; color: "#323248"; border.color: "#4a4a6a" }
+                        onTextChanged: noteReminderDate = text
                     }
                     TextField {
                         id: reminderTimeField
                         Layout.fillWidth: true
-                        text: noteReminder.getTime() ? Qt.formatTime(noteReminder, "hh:mm") : ""
+                        text: noteReminderTime
                         placeholderText: "ЧЧ:ММ"
                         color: "#ffffff"
+                        inputMethodHints: Qt.ImhTime
                         background: Rectangle { radius: 12; color: "#323248"; border.color: "#4a4a6a" }
+                        onTextChanged: noteReminderTime = text
                     }
                     Rectangle {
                         width: 40; height: 40; radius: 10
@@ -195,16 +207,15 @@ Page {
                             id: clearReminderMouse
                             anchors.fill: parent
                             onClicked: {
-                                noteReminder = new Date(0)
-                                reminderDateField.text = ""
-                                reminderTimeField.text = ""
+                                noteReminderDate = ""
+                                noteReminderTime = ""
                             }
                         }
                     }
                 }
             }
 
-            // Цвет
+            // Яркие цвета
             ColumnLayout {
                 spacing: 10
                 Label {
@@ -213,7 +224,15 @@ Page {
                 }
                 RowLayout {
                     spacing: 14
-                    property var colorList: ["#ffffff","#ffb3b3","#b3ffb3","#b3b3ff","#ffffb3","#ffb3ff"]
+                    property var colorList: [
+                        "#ffffff",  // белый
+                        "#ff6b6b",  // красный
+                        "#51cf66",  // зелёный
+                        "#339af0",  // синий
+                        "#ffd43b",  // жёлтый
+                        "#ff6eb4",  // розовый
+                        "#ff922b"   // оранжевый (добавим)
+                    ]
                     Repeater {
                         model: parent.colorList
                         Rectangle {
@@ -264,10 +283,24 @@ Page {
                         return
                     }
                     var tagsArray = tagsField.text.split(",").map(t => t.trim()).filter(t => t !== "")
+                    // Преобразование даты из ДД.ММ.ГГГГ в ISO
                     var reminder = new Date(0)
-                    if (reminderDateField.text && reminderTimeField.text) {
-                        var dt = reminderDateField.text + "T" + reminderTimeField.text + ":00"
-                        reminder = new Date(dt)
+                    var dateStr = reminderDateField.text.trim()
+                    var timeStr = reminderTimeField.text.trim()
+                    if (dateStr !== "" && timeStr !== "") {
+                        var parts = dateStr.split(".")
+                        if (parts.length === 3) {
+                            var day = parseInt(parts[0], 10)
+                            var month = parseInt(parts[1], 10) - 1
+                            var year = parseInt(parts[2], 10)
+                            var timeParts = timeStr.split(":")
+                            var hours = parseInt(timeParts[0], 10)
+                            var minutes = parseInt(timeParts[1], 10)
+                            if (!isNaN(year) && !isNaN(month) && !isNaN(day) &&
+                                !isNaN(hours) && !isNaN(minutes)) {
+                                reminder = new Date(year, month, day, hours, minutes)
+                            }
+                        }
                     }
                     noteManager.addOrUpdateNoteFields(
                         noteId, titleField.text, contentArea.text, noteColor, notePinned,

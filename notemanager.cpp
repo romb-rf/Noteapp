@@ -206,18 +206,14 @@ int NoteManager::nextId() const
 void NoteManager::checkReminders()
 {
     QDateTime now = QDateTime::currentDateTime();
-    for (const auto &note : m_notes) {
+    for (auto &note : m_notes) {   // & чтобы можно было изменять
         if (note.reminder().isValid() && note.reminder() <= now) {
             emit reminderTriggered(note);
-            Note updated = note;
-            updated.setReminder(QDateTime());
-            for (auto &n : m_notes) {
-                if (n.id() == updated.id()) {
-                    n = updated;
-                    break;
-                }
-            }
+            // Удаляем напоминание
+            note.setReminder(QDateTime());
             saveToFile(QCoreApplication::applicationDirPath() + "/notes.json");
+            emit notesChanged();         // обновить модель
+            emit filteredNotesChanged();
         }
     }
 }

@@ -15,7 +15,7 @@ Rectangle {
     layer.enabled: true
 
 
-    // Область клика для открытия заметки
+    // Кликабельная область для открытия заметки
     MouseArea {
         id: cardMouseArea
         anchors.fill: parent
@@ -53,12 +53,12 @@ Rectangle {
         }
     }
 
-    // Текстовая часть – жёстко привязана к левому краю и к правому краю с отступом = отступ кнопки + её ширина + промежуток
+    // Текстовая часть – теперь привязана к левой стороне кнопки с отступом 12
     Column {
         anchors.left: parent.left
         anchors.leftMargin: 18
-        anchors.right: parent.right
-        anchors.rightMargin: 12 + 40 + 12   // отступ кнопки от края + ширина кнопки + промежуток между текстом и кнопкой
+        anchors.right: pinButton.left      // <-- ключевое изменение
+        anchors.rightMargin: 12
         anchors.verticalCenter: parent.verticalCenter
         spacing: 2
 
